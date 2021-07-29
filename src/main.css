@@ -1,0 +1,34 @@
+#main {
+    margin: 0 auto;
+    width: 400px;
+    height: 150px;
+    border: 1px solid black;
+    border-radius: 25px;
+    background-color: aqua;
+    display: flex;
+    align-items: space-between;
+}
+
+#title{
+    margin: 5%;
+}
+#text-fields{
+    margin:5%;
+}
+#password-length{
+    margin:5%;
+    width:20%;
+    border-radius: 15px;
+}
+
+#password{
+    margin:5%;
+    width:95%;
+    padding:2%;
+    background-color: aliceblue;
+    border-radius: 15px;
+}
+
+#create-password{
+    border-radius: 15px;
+}
