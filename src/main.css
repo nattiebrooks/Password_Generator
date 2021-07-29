@@ -1,11 +1,24 @@
+/* colors
+ #555B6E
+ #89B0AE
+ #BEE3DB
+ #FAF9F9
+ #FFD6BA
+*/
+
+
+body {
+    background-color: #FAF9F9;
+}
 #main {
     margin: 0 auto;
+    padding: 10px;
     width: 400px;
-    height: 150px;
+    height: 250px;
     border: 1px solid black;
     border-radius: 25px;
-    background-color: aqua;
-    display: flex;
+    background-color: #BEE3DB;
+    color:#555B6E;
     align-items: space-between;
 }
 
@@ -22,8 +35,8 @@
 }
 
 #password{
-    margin:5%;
-    width:95%;
+    margin:2%;
+    width:90%;
     padding:2%;
     background-color: aliceblue;
     border-radius: 15px;
