@@ -4,53 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/main.css">
     <title>Document</title>
+    <script src="src/main.js"></script>
 </head>
 <body>
     <div id="main">
         <input id="password-length" type="text" placeholder="16">Password length</input>
-        <button id="create-password" onclick="createPassword(length)">Generate</button>
+        <button id="create-password" onclick="createPassword()">Generate</button>
         <p id="password">
 
         </p>
     </div>
-    <script>
-
-        var password = [];
-
-        var lowerAlphabet = [...Array(26).keys()].map(i => String.fromCharCode(i + 97))
-    
-        var upperAlphabet = [...Array(26).keys()].map(i => String.fromCharCode(i + 97).toUpperCase());
-      
-         var numbers = [...Array(10).keys()];
-        
-         var specialCharacters = [...Array(15).keys()].map(i=> String.fromCharCode(i + 33));
-         
-
-         // get the password length, if none is entered, set default to 16
-        var lengthValue = Number(document.getElementById('password-length').value);
-        console.log(lengthValue);
-
-        var length = (lengthValue > 0) ? lengthValue : 16;
-        console.log(length)
-
-         // generate random password
-          
-         function createPassword(length){
-
-            var charset = [...lowerAlphabet, ...upperAlphabet, ...numbers, ...specialCharacters].join('');
-            // make sure text field is clear
-            document.getElementById('password').innerText = '';
-
-             while(password.length < length){
-                 password.push(charset.charAt(Math.floor(Math.random() * charset.length + 1)));
-                }                 
-
-             //display password on the screen
-             document.getElementById('password').innerText = password.join('');
-         }
-
-        
-    </script>
 </body>
 </html>
