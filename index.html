@@ -12,9 +12,10 @@
     <div id="main">
         <h1 id="title">Password Generator</h1>
         <div id="text-fields">
-            <input id="password-length" type="text" placeholder="16">length</input>
+            <label for="length">Length: </label>
+            <input id="password-length" type="text" placeholder="16" name="length"></input>
             <button id="create-password" onclick="createPassword()">Generate</button>
-            <p id="password">New Password...</p>
+            <textarea id="password" name="password">New Password...</textarea>
         </div>
     </div>
     
